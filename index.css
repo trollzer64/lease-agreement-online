@@ -1,0 +1,51 @@
+body {
+	padding: 2.5rem;
+}
+
+main {
+	--border-width: 0.15rem;
+}
+
+main > * {
+	margin: 0;
+	padding: 0.5rem;
+
+	border-style: solid;
+	border-color: black;
+	border-top-width: var(--border-width);
+	border-right-width: var(--border-width);
+	border-bottom-width: 0px;
+	border-left-width: var(--border-width);
+}
+
+main > :last-child {
+	border-bottom-width: var(--border-width);
+}
+
+.inputSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	align-items: baseline;
+
+	margin: var(--border-width);
+}
+
+.inputSection > label {
+	flex: auto 0;
+
+	margin: 0.5rem;
+}
+
+.selectionSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	align-items: baseline;
+
+	margin: var(--border-width);
+}
+
+.selectionSection > label {
+	margin: 0.5rem;
+}
